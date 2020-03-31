@@ -27,6 +27,8 @@ header {
     background-size: cover;/*adapta la imagen al ancho de nuestra pantalla*/
 }
 #contenedor-titulo-flex{
+    max-width: 1580px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 18vh 0; /*que baje el 18% de la ventana*/
@@ -39,11 +41,40 @@ margin: 0; /*separa el elemento de otros elementos a su alrededor */
 h2{
     font-size: 19px; /*tamaño de la fuente */
     color: #f1e7b6;
-    text-align: center;
 }
 .contenedor-titulo a{
     font-size: 14px; /*tamaño del titulo "a" */
     color: #fe346e; /*color contenedor titulo "a"*/
 background: #f1e7b6; /*color de fondo del boton*/
 padding: 14px 24px; /*es el espaciado interno del elemento (para hacerlo mas grande) */
+text-align: center; /* sirve para centrar el boton */
+width: 128px; /*le da un ancho fijo */
+display: inline-block; /*le aplica al elemento en linea propiedades del elemento de bloque */
+}
+.contenedor-titulo{
+    text-align: center;
+}
+p.logo {
+    color: #fe346e;
+    font-size: 20px; /*tamaño del titulo "a" */
+}
+nav ul li a{
+    color: #fe346e;
+}
+
+/*SECCION DE SOBRE MI */
+
+H3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    color: #fe346e;
+}
+#sobre-mi .contenedor-sobremi{
+    display: flex;
+}
+#sobre-mi .texto{
+    width: 42%;
+    color: #fe346e;    
+/*separar para no estar juntos */
 }
