@@ -14,7 +14,7 @@ header ul li{
 margin-right: 15px; /*margen a la derecha */
 }
 a{
-    text-decoration: none; /*ningun elemento a tiene subrayado*/
+    text-decoration: none; /*ningun elemento "a" tiene subrayado*/
 }
 .contenedor{
     max-width: 1280px;
@@ -22,7 +22,28 @@ a{
     margin: auto;
 }
 header {
-    background: url(imagenes/1.jpg);
+    background: linear-gradient(rgba(84,93,220,.9),rgba(96,171,245,.9)),url(imagenes/1.jpg);
     height: 100vh;
     background-size: cover;/*adapta la imagen al ancho de nuestra pantalla*/
+}
+#contenedor-titulo-flex{
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0; /*que baje el 18% de la ventana*/
+}
+h1{
+    font-size: 60px; /*tamaño de fuente */
+    color: #fe346e; /*color de la letra "h1" */
+margin: 0; /*separa el elemento de otros elementos a su alrededor */
+}
+h2{
+    font-size: 19px; /*tamaño de la fuente */
+    color: #f1e7b6;
+    text-align: center;
+}
+.contenedor-titulo a{
+    font-size: 14px; /*tamaño del titulo "a" */
+    color: #fe346e; /*color contenedor titulo "a"*/
+background: #f1e7b6; /*color de fondo del boton*/
+padding: 14px 24px; /*es el espaciado interno del elemento (para hacerlo mas grande) */
 }
