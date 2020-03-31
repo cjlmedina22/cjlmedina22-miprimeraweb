@@ -1,3 +1,28 @@
 body{
-    background: red;
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+}
+header .contenedor{
+    display: flex;
+justify-content: space-between;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none; /*no quiero que tenga ningun estilo en la lista*/
+margin-right: 15px; /*margen a la derecha */
+}
+a{
+    text-decoration: none; /*ningun elemento a tiene subrayado*/
+}
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+header {
+    background: url(imagenes/1.jpg);
+    height: 100vh;
+    background-size: cover;/*adapta la imagen al ancho de nuestra pantalla*/
 }
