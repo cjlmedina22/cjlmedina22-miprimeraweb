@@ -42,7 +42,7 @@ h2{
     font-size: 19px; /*tamaño de la fuente */
     color: #f1e7b6;
 }
-.contenedor-titulo a{
+.contenedor-titulo a, #sobre-mi a{
     font-size: 14px; /*tamaño del titulo "a" */
     color: #fe346e; /*color contenedor titulo "a"*/
 background: #f1e7b6; /*color de fondo del boton*/
@@ -69,12 +69,32 @@ H3{
     font-size: 55px;
     font-weight: normal;
     color: #fe346e;
+    
 }
 #sobre-mi .contenedor-sobremi{
     display: flex;
 }
 #sobre-mi .texto{
     width: 42%;
-    color: #fe346e;    
+    color: #fe346e;
+        
 /*separar para no estar juntos */
+}
+/*seccion servicios*/
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fe346e;
+    background: #f1e7b6;
+}
+.servicio {
+    width: 24%; /*achicar */
+}
+.servicio h4{
+    font-size: 30px; /* esta agrandando "h4" */
+    margin: 0;
+}
+.servicio p{
+    margin-bottom: 20px;
 }
