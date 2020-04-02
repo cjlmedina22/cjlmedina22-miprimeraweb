@@ -119,3 +119,10 @@ position: relative;
 .icono{
     float: right; /* esta propiedad flotar el contenido hacia la derecha*/
 }
+/*SECCION MIS TRABAJOS*/
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;
+}
+span{
+    color: #fe346e;
+}
