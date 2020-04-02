@@ -88,13 +88,34 @@ H3{
     color: #fe346e;
     background: #f1e7b6;
 }
-.servicio {
+.servicio{
+    padding: 34px 30px 38px 30px; /*sirve para aumentar el tamaño interno del elemento */
     width: 24%; /*achicar */
+    border-radius: 10px; /*bordes del radio "le da bordes a la caja*/
+margin-bottom: 40px; /* le da el margen de abajo para separar */
+position: relative;
 }
+
 .servicio h4{
     font-size: 30px; /* esta agrandando "h4" */
     margin: 0;
 }
 .servicio p{
     margin-bottom: 20px;
+}
+.contenedor-servicios .violeta {
+    background: linear-gradient(to top, #5055df, #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+.contenedor-servicios .celeste {
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+.ondas{
+    position: absolute;
+    left: 0; /*le esta diciendo que valla a la posicion 0 de la izquierda */
+    bottom: 0;
+}
+.icono{
+    float: right; /* esta propiedad flotar el contenido hacia la derecha*/
 }
