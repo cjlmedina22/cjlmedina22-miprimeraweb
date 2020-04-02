@@ -126,3 +126,17 @@ button.owl-prev, button.owl-next {
 span{
     color: #fe346e;
 }
+/*por que trabajar conmigo*/
+
+.contenedor-trabajar{
+display: flex; /*me los coloco uno al lado del otro*/
+flex-wrap: wrap; /*detecta que si los elementos ocupan mucho lugar bajan a otra linea*/
+justify-content: space-around; /*sirve para serpararlos un poco*/
+}
+#por-que-trabajar .item{
+    width: 28%;
+    text-align: center;
+}
+#por-que-trabajar ul li{
+    list-style: none; /*saca los estilos de la lista*/
+}
