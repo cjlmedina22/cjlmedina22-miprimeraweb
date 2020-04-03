@@ -140,3 +140,14 @@ justify-content: space-around; /*sirve para serpararlos un poco*/
 #por-que-trabajar ul li{
     list-style: none; /*saca los estilos de la lista*/
 }
+#por-que-trabajar ul li:nth-child(2){
+    font-weight: bold;
+font-size: 19px ; /*a la palabra velocidad la agranda*/
+margin-top: 5px; /*SEPARA LA PALABRA VELOCIDAD DE LA IMAGEN*/
+margin-bottom: 20px;
+color: #f1e7b6;
+}
+#por-que-trabajar ul li:nth-child(3){
+    line-height: 31px; /*alto de linea separa los parrafos*/
+    color: #fe346e;
+}
