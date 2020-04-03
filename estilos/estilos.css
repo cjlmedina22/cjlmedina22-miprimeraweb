@@ -42,7 +42,7 @@ h2{
     font-size: 19px; /*tamaño de la fuente */
     color: #f1e7b6;
 }
-.contenedor-titulo a, #sobre-mi a{
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a, #contacto input[type="submit"]{
     font-size: 14px; /*tamaño del titulo "a" */
     color: #fe346e; /*color contenedor titulo "a"*/
 background: #f1e7b6; /*color de fondo del boton*/
@@ -150,4 +150,77 @@ color: #f1e7b6;
 #por-que-trabajar ul li:nth-child(3){
     line-height: 31px; /*alto de linea separa los parrafos*/
     color: #fe346e;
+}
+/*SECCION BLOG*/
+#blog{
+    background: #fe346e;
+}
+
+#blog .contenedor-publicaciones {
+display: flex; /*coloco las 2 imagenes uno al lado de la otra*/
+justify-content: space-around;
+}
+#blog .publicacion{
+    width: 30%; /*le da el ancho */
+    box-shadow: 1px 1px 14px #f1e7b6; /* LE DA SOMBRA AL CUADRADO*/
+}
+#blog img{
+    width: 100%;
+}
+#blog .contenido{
+background: white; 
+padding: 20px;   
+}
+#blog h4{
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin: 0;
+}
+#blog p{
+    color: #f1e7b6;
+    line-height: 2; /*salto de linea*/
+    font-size: 16px;
+}
+#blog a{
+    width: 87px;
+}
+/*SECCION QUE ESPERAS*/
+#que-esperas {
+    background: #fe346e;
+    text-align: center; /*me sentra todo*/
+    padding: 50px 0; /* el padding sirve para separar*/
+    margin-top: 40px;
+}
+#que-esperas h3{
+    font-size: 23px;
+    color: #5055df;
+
+}
+/*SECCION CONTACTO */
+#contacto form{
+    display: flex;
+    justify-content: space-between; /*me separa los campos */
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto; /*siempre que tenemos un width fijo ahi que ponerle un margin: auto */
+}
+input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #fe346e; /*tamaño del borde y color */
+    font-size: 17px; /*tamaño de la letra*/
+}	
+textarea{
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #fe346e;
+font-size: 17px;
+margin-bottom: 40px;
+width: 100%;
+}
+#contacto input[type="submit"]{
+    width: 166px;
+    margin: auto; /*me sentra el boton "enviar mensaje"*/
 }
