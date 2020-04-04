@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos/estilos.css">
     <title>mi primera web</title> <!--esto va arriba del navegador-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 
@@ -17,14 +18,16 @@
         <div class="menu">
         <div class="contenedor">
         <p class="logo">CRISTIAN MEDINA</p>       
-    <nav>
-        <ul>
-<li><a href="">Sobre mi</a></li>
-<li><a href="">Servicios</a></li>
-<li><a href="">Contacto</a></li>
-<li><a href="">¿Por que trabajar conmigo?</a></li>
-<li><a href="">Blog</a></li>
-        </ul><!--lista ordenada-->
+   <img class="menu-icon" src="estilos/imagenes/menu.png" alt="">
+        <nav>
+        <ul class="lista-menu">
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#mis-trabajos">Mis Trabajos</a></li>
+            <li><a href="#por-que-trabajar">¿Por que trabajar conmigo?</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul><!--lista ordenada-->
     </nav>
     </div>
     </div>    
@@ -332,6 +335,41 @@
         }
     }
 })
-</script
+</script>
+
+<script>
+
+    $(document).ready(function(){
+    
+    $(window).scroll(function(){
+      scroll = $(window).scrollTop();
+      if (scroll > 100) {
+        $('.menu').css({"position":"fixed"}); <!--posicion fija, "aparece en la pantalla-->
+        $('.menu').css({"width":"100%"});
+        $('.menu').css({"top":"0"}); <!--para que este arriba de todo -->
+        $('.menu').css({"background":"#fe346e"}); <!--estilo color-->
+        $('.menu a').css({"color":"#000"});
+        $('.logo').css({"color":"#000"});
+        $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
+        $('.menu').css({"z-index":"100"});
+      } else {
+        $('.menu').css({"position":"relative"});
+        $('.menu').css({"background":"transparent"});
+        $('.menu').css({"box-shadow":"0 0 0"});
+        $('.menu a').css({"color":"#fff"});
+        $('.logo').css({"color":"#fff"});
+      }
+    }) <!--programacion jquery del menu-->
+    
+    $('.menu-icon').click(function(){
+      $('header nav').slideToggle();
+    })
+    
+    })
+    
+    
+    
+    </script>
+
 </body>
 </html>

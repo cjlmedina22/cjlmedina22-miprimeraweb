@@ -152,6 +152,9 @@ color: #f1e7b6;
     color: #fe346e;
 }
 /*SECCION BLOG*/
+#blog h3{
+    color: #f1e7b6;
+}
 #blog{
     background: #fe346e;
 }
@@ -264,3 +267,66 @@ footer p{
     top: 80%;
     right: 1%;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto{
+    padding: 90px 0;
+}
+#servicios{
+    padding: 100px 0;
+    
+}
+.menu-icon {
+    display: none;
+}
+@media (min-width: 349px) and (max-width:800px) {
+    header {
+      height: 70vh; 
+    }
+
+.menu-icon {
+        display: block;
+        float: right;
+        width: 40px;
+        height: 35px;
+        margin-top: 15px;
+    }
+    header nav{
+        position: absolute;
+        top: 83px;
+        left: 0;
+        height: 268px;
+        background: #f1e7b6;
+        width: 100%;
+        display: none;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin-bottom: 15px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h2{
+        font-size: 19px;
+    }
+  
+    .servicio {
+      width: 57%;
+      padding: 34px 30px 69px 30px;
+      margin: auto;
+      margin-bottom: 45px;
+  }
+  
+  #blog .publicacion {
+      width: 71%;
+      margin: auto;
+      margin-bottom: 40px;
+  }
+  
+  }
+  
