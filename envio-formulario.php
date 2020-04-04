@@ -4,9 +4,9 @@ $email_usuario=$_POST['email'];
 $consulta_usuario=$_POST['mensaje'];
 // Creo 3 variables que me toman lo que se envía por POST de cada valor del formulario
 
-$destino="cjlmedina988@gmail.com";
+$destino="jonlifschitz@gmail.com";
 
-$asunto="Consulta enviada desde https://github.com/cjlmedina22/cjlmedina22-miprimeraweb.git";
+$asunto="Consulta enviada desde www.jonathanlifschitz.com.ar";
 
 $mensaje="Tu Nombre es: ".$nombre_usuario."\r\n";
 $mensaje.="Tu Email es: ".$email_usuario."\r\n";
@@ -17,6 +17,6 @@ $remitente="From: algo@jonylif.com.ar";
 mail($destino, $asunto, $mensaje, $remitente);
 
 
-header("Location:index.php?i=ok");
+header("Location:index.html?i=ok");
 // SI EL FORMULARIO SE ENVIO CORRECTAMENTE, PONEME EN LA URL DESPUES DEL INDEX.PHP UN SIGNO DE PREGUNTA, UNA LETRA I, Y UN IGUAL OK
 ?>

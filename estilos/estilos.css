@@ -224,3 +224,43 @@ width: 100%;
     width: 166px;
     margin: auto; /*me sentra el boton "enviar mensaje"*/
 }
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+  
+  .contacto-info img {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  footer {
+    background: #fe346e;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer img{
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s; /*velocidad para rotar*/
+}
+footer img:hover {
+transform: rotate(360deg);
+transition: 0.4s; /*sirve para rotar si o si */
+} /*le esta diciendo que rote 360 grados*/
+footer p{
+    color: #f1e7b6;
+}
+#whatsapp {
+    position: fixed; /*para que el elemento este fijo en la pantalla*/
+    top: 80%;
+    right: 1%;
+}

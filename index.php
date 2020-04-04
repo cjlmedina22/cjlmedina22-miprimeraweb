@@ -263,7 +263,7 @@
 </section>
 
 <section id="contacto">
-<?php
+  <?php
       if(@$_GET['i']=='ok') { // QUIERE DECIR QUE EL FORMULARIO SE ENVIO CORRECTAMENTE ?>
 
       <h3>La consulta se envio correctamente. Nos contactaremos a la brevedad.</h3>
@@ -271,17 +271,15 @@
       <?php
       } else{
       ?>
-    <div class="contenedor">
-        <h3>Contacto</h3>
-        <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
-        <input type="text" placeholder="Nombre" name="nombre" require>
-        <input type="email" placeholder="email" name="email" require>
-        <textarea placeholder="mensaje" name="mensaje"></textarea>
-<input type="submit" value="ENVIAR MENSAJE">
-        
-        
-        </form> <!--esto sirve para crear un formulario de contacto-->
-
+  <div class="contenedor">
+    <h3>Contacto</h3>
+    <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
+      <input type="text" placeholder="Nombre" name="nombre" required>
+      <input type="email" placeholder="Email" name="email" required>
+      <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+      <input type="submit" value="ENVIAR MENSAJE">
+    </form>
+          <?php } ?>
 
 
     </div>

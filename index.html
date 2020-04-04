@@ -11,6 +11,8 @@
 </head>
 <body>
 
+    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5491141810865"><img src="estilos/imagenes/whatsapp.png" alt=""></a>
+
     <header>
         <div class="menu">
         <div class="contenedor">
@@ -256,31 +258,57 @@
     </div>
      </div>
 </section>
+
 <section id="que-esperas">
-<div class="contenedor"></div>
-<h3>¿Que esperas para tener tu paguina web?</h3>
-<a href="">CHARLEMOS</a>
-</section>
-
-<section id="contacto">
     <div class="contenedor">
-        <h3>Contacto</h3>
-        <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
-        <input type="text" placeholder="Nombre" name="nombre">
-        <input type="email" placeholder="email" name="email">
-        <textarea placeholder="mensaje" name="mensaje"></textarea>
-<input type="submit" value="ENVIAR MENSAJE">
-        
-        
-        </form> <!--esto sirve para crear un formulario de contacto-->
-
-
-
+      <h3>¿Qué esperas para tener tu página web?</h3>
+      <a href="">CHARLEMOS</a>
+    </div>
+  </section>
+  
+  <section id="contacto">
+    <?php
+        if(@$_GET['i']=='ok') { // QUIERE DECIR QUE EL FORMULARIO SE ENVIO CORRECTAMENTE ?>
+  
+        <h3>La consulta se envio correctamente. Nos contactaremos a la brevedad ponele.</h3>
+  
+        <?php
+        } else{
+        ?>
+    <div class="contenedor">
+      <h3>Contacto</h3>
+      <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Nombre" name="nombre" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+        <input type="submit" value="ENVIAR MENSAJE">
+      </form>
+            <?php } ?>
+  
+  
+      <div class="contacto-info">
+        <div class="mail"><img src="estilos/imagenes/mail-icon.png" alt="">cjlmedina988@gmail.com</div>
+        <div class="whatsapp"><img src="estilos/imagenes/whatsapp-icon.png" alt="">1141810865</div>
+      </div>
     </div>
 </section>
 
 
 </main> <!--aca va lo principal adentro de main-->
+<footer>
+    <div class="contenedor">
+      <div class="redes">
+        <a href="#"><img src="estilos/imagenes/facebook.png" alt="imagen de facebook"></a>
+        <a href="#"><img src="estilos/imagenes/medium.png" alt="imagen de facebook"></a>
+        <a href="#"><img src="estilos/imagenes/github.png" alt="imagen de facebook"></a>
+        <a href="#"><img src="estilos/imagenes/linkedin.png" alt="imagen de facebook"></a>
+      </div>
+      <div class="parrafo">
+        <p>© 2020 Cristian Medina | Diseñador Web Argentina. Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
